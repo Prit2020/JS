@@ -61,11 +61,18 @@
 // console.log(booleanIsLoggedIn);
 
 // Case - 9 
-let isLoggedIn = "prit"
+// let isLoggedIn = "prit"
 
-let booleanIsLoggedIn = Boolean(isLoggedIn)  // it will convert it into boolean
-console.log(typeof booleanIsLoggedIn);
-console.log(booleanIsLoggedIn);
+// let booleanIsLoggedIn = Boolean(isLoggedIn)  // it will convert it into boolean
+// console.log(typeof booleanIsLoggedIn);
+// console.log(booleanIsLoggedIn);
+
+// Case - 10
+let someNumber = 33
+
+let stringNumber = String(someNumber)  // it will convert number into string
+console.log(typeof stringNumber);
+console.log(stringNumber);
 
 /*
 
