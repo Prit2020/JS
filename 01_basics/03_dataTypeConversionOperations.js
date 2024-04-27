@@ -68,11 +68,11 @@
 // console.log(booleanIsLoggedIn);
 
 // Case - 10
-let someNumber = 33
+// let someNumber = 33
 
-let stringNumber = String(someNumber)  // it will convert number into string
-console.log(typeof stringNumber);
-console.log(stringNumber);
+// let stringNumber = String(someNumber)  // it will convert number into string
+// console.log(typeof stringNumber);
+// console.log(stringNumber);
 
 /*
 
@@ -81,3 +81,32 @@ Conversion
 "prit" (string with values) => true
 "" (for empty string) => false
 */
+
+
+// ************* Operations ********************
+
+// let value = 3
+// let negativeValue = -value
+// console.log(negativeValue);
+
+
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);  // this is 2^3 (8)
+// console.log(2/3);
+// console.log(2%5);
+
+// let str1 = "hello"
+// let str2 = " prit"
+// let str3 = str1 + str2
+// console.log(str3);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + "2");
+
+
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
