@@ -2,7 +2,7 @@ const accountId = 1234
 let accountEmail = "prit@google.com"
 var accountPassword = "123456"
 accountCity = "Jaipur"
-let accountState;  // if we just a variable & do not specify give any values to it then it is undefined
+let accountState;  // if we just declare a variable & do not specify its datatype & give any values to it then it is undefined
 
 // accountId = 23
 // console.log(accountId);  // changing values of const are not allowed
