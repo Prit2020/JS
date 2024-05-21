@@ -61,5 +61,23 @@ const users = [
 // console.log(Object.values(instaUser));
 // console.log(Object.entries(instaUser));
 
-console.log(instaUser.hasOwnProperty('isLoggedIn')); // it used to check wheather the object has property or key mention in the parameter
-console.log(instaUser.hasOwnProperty('isLogged'));
+// console.log(instaUser.hasOwnProperty('isLoggedIn')); // it used to check wheather the object has property or key mention in the parameter
+// console.log(instaUser.hasOwnProperty('isLogged'));
+
+
+// object destruturing
+
+const course = {
+    courseName: "js in hindi",
+    price: "999",
+    courseTeacher: "prit"
+}
+
+// console.log(course.courseName); // rather than writing this everytime we can use diff method which is given below 
+
+const {courseName} = course // from the object display the given parameter 
+
+// const {courseName: name} rather than writting courseName u can give it a diff name & can call it by that name to display the values O/P will remain same 
+
+const {courseName: name} = course
+console.log(courseName);
