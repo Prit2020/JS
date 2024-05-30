@@ -17,7 +17,7 @@ const dcHeros = ["superman", "batman", "flash"]
 // const someArray = anotherArray.flat(Infinity) // in this we have to pass a number till what depth it will go
 // console.log(someArray);
 
-// console.log(Array.isArray("prit")) // since this not a array we can use fom method to convert it into a array
+// console.log(Array.isArray("prit")) // since this not a array we can use from method to convert it into a array
 
 // console.log(Array.from("prit")) // this will convert any values into a array
 // console.log(Array.from({name: "prit"})) // this will return an empty array & this is very interesting
