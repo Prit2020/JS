@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Learning JS</h1>
+    <button class="start">Start</button>
+    <button class="stop">Stop</button>
+
+
+    <script>
+        // setInterval(function(){
+        //     console.log("This is an exmaple");
+        // }, 2000)
+
+        // const printSomething = function() {
+        //     console.log("This will work same as before!");
+        // }
+        // const intervalId = setInterval(printSomething, 2000)
+        // clearInterval(intervalId)
+
+        const startHere = function() {
+            document.querySelector('.start').addEventListener('click', function(){
+                console.log("It means you have clicked on the start button!");                
+            }, false)
+        }
+
+        const intervalId = setInterval(startHere, 2000)
+
+        document.querySelector('.stop').addEventListener('click', function(){
+            clearInterval(intervalId)
+        }, false)
+        
+    </script>
+</body>
+</html>
