@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Learning</title>
+    <style>
+        body {
+            background-color: #212121;
+            color: aliceblue;
+        }
+        #google {
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is event learning!</h3>
+    <ul id="images">
+        <li id="car1"><img src="./images/test-image-1.jpg" alt="car1" width="200px" id="ferrari"></li>
+
+        <li id="car2"><img src="./images/test-image-2.jpg" alt="" width="200px" id="bmw"></li>
+
+        <li id="car3"><img src="./images/test-image-3.jpg" alt="" width="200px" id="porsche"></li>
+
+        <li id="car4"><img src="./images/test-image-2.jpg" alt="" width="200px" id="defender"></li>
+
+        <li id="link"><a href="https://www.google.com" id="google">Google</a></li>
+
+    </ul>
+
+    <script>
+        // JS is sequencial language so all the events in JS are sequencial and they run in sequence only but there are some exception
+
+
+        // document.getElementById('images').addEventListener('click', function (e) {
+        //     console.log("Clicked on the ul");   
+        // }, false)  
+        // in these fun main parent id is selected and an onClick fun is passed and below that there is another fun where an id with name "bmw" is selected and if we clicked on that image in the console tab we can see that first it will console "This is bmw" and then it will console "Clicked on the ul" because of the default behaviour of "bubbled propagation"
+
+        // document.getElementById('bmw').addEventListener('click', function (e) {
+        //     console.log("This is bmw");
+        //     // e.stopPropagation()    // here we have used "stopPropagation" method and it will only console "This is bmw" part and not the "clicked on the ul"
+        //     // e.preventDefault();
+        // }, false)
+
+        // document.getElementById('google').addEventListener('click', function (e) {
+        //     e.preventDefault();  // this will prevent the default behaviour of the anchor tag. it will not allow to redirect 
+        //     console.log("This will prevent the default behaviour");   
+        // })
+
+
+
+        // below is an method for event but it does not gives you more features so do not use it much
+        // document.getElementById('porsche').onclick = function() {
+        //     alert("This is porsche")
+        // }
+
+        // below method is the best approach for event listner and we can also pass event object in that 
+        // document.getElementById('porsche').addEventListener('click', function() {
+        //     alert("Again clicked on porsche!")
+        // })
+
+        // it has three parameters 
+        // 1st Event - click, etc
+        // 2nd function
+        // 3rd event propogation or (true/false) here the default is false 
+        // true means event capturing 
+        // false means event bubbling and these is default. It goes from inside element to outside elements 
+
+        // In the below eg. the event propogation is bubbling and it goes from inner element to outter element therefore when clicked on other images inside the ul tag it will print "clicked inside the ul". But when clicked on the "porsche" image specifically at that time it will print "porsche clicked" and then it will print "clicked inside the ul"
+        // document.getElementById('images').addEventListener('click', function(e) {
+        //    console.log("Clicked inside the ul");  
+        // }, false)
+
+        // document.getElementById('porsche').addEventListener('click', function(e) {
+        //    console.log("porsche clicked");  
+        // }, false)
+        
+
+        // In the below eg. the event propogation is event capturing and it follows top to bottom approach therefore when clicked on other images inside the ul tag it will print "clicked inside the ul". But when clicked on the "porsche" image specifically at that time it will print "clicked inside the ul" and then it will print "porsche clicked"
+        // document.getElementById('images').addEventListener('click', function(e) {
+        //    console.log("Clicked inside the ul");  
+        // }, false)
+
+        // document.getElementById('porsche').addEventListener('click', function(e) {
+        //    console.log("porsche clicked");
+        //    e.stopPropagation()  // this won't allow bubbling propogation and when clicked on the image it will only print "porsche clicked"
+        // }, false)
+
+        // document.getElementById('google').addEventListener('click', function(e){
+        //     console.log("google clicked but wont redirect");
+        //     e.preventDefault()   // this method will stop the default behaviour of the link. when clicked on the link it wont redirect
+        //     e.stopPropagation()
+            
+        // })
+
+
+        // study below event listners 
+        // type, timeStamp, defaultPrevented 
+        // traget, toElement, srcElement, currentTarget
+        // clientX, clientY, screenX, screenY    { this are interview related questions }
+        // altkey, ctrlkey, shiftket, keyCode
+
+
+
+        document.querySelector('#images').addEventListener('click', function(e){
+            if(e.target.tagName === 'IMG') {
+                console.log(e.target.id);
+                let removeIt = e.target.parentNode
+                removeIt.remove()
+            }
+
+            // let removeIt = e.target.parentNode
+            // there are 2 methods to remove things
+            // removeIt.remove()   // this 1st method to remove
+            // removeIt.parentNode.removeChild(removeIt)   this is 2nd method but very confusing
+        }, false)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">This is Async learning video</h1>
+    <button class="stop">Stop</button>
+
+
+    <script>
+        // setTimeout(): it takes handler(a func. without name or reference of a func.) and time. In below e.g it takes a 2 sec time to console and it will do the task only one time 
+        // method 1
+        // setTimeout(function(){
+        //     console.log("Prit here");
+        // }, 2000)
+
+        // method 2
+        // const sayHello = function() {
+        //     console.log("Prit here");
+        // }
+        // setTimeout(sayHello, 2000)  // this will work same as above in this it takes reference of a variable or func. and do not execute the func. just h=give the reference 
+
+        // clearTimeout(): it takes reference of the setTimeout() what it does is it stops, clears the execution of setTimeout()
+        // const sayHello = function() {
+        //     console.log("Prit here");
+        // }
+        // const stopIt = setTimeout(sayHello, 2000)  // hold setTimeout() in a variable and pass its reference to clearTimeout()
+
+        // clearTimeout(stopIt)  // by doing these setTimeout will never execute 
+
+        const changeHeading = function() {
+            document.querySelector('.heading').innerHTML="This is part of my learning!"
+        }
+        const stop = setTimeout(changeHeading, 2000)
+
+        document.querySelector('.stop').addEventListener('click', function(){  // when clicked on stop button the clearTimeout stops the execution of setTimeout    
+            clearTimeout(stop)
+            console.log("Stopped");
+        }, false) 
+    </script>
+</body>
+</html>
