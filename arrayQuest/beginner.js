@@ -28,6 +28,10 @@ let firstElement;
 let middleElement;
 let lastElement = array.length - 1;
 
+let x = 10
+console.log(x);
+
+
 console.log(array[0]);
 console.log(lastIndexOf(lastElement))
 
