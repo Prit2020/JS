@@ -1,0 +1,19 @@
+Remove duplicates from an array.
+
+Find the second largest element in an array.
+
+Rotate an array to the right by k positions.
+
+Rotate an array to the left by k positions.
+
+Check if an array is sorted.
+
+Find all duplicate elements in an array.
+
+Find the frequency of each element.
+
+Merge two arrays into one.
+
+Find the intersection of two arrays.
+
+Find the union of two arrays.

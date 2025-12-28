@@ -1,0 +1,19 @@
+Implement a sliding window maximum.
+
+Find the longest consecutive sequence.
+
+Rotate matrix (array of arrays) by 90 degrees.
+
+Find all permutations of an array.
+
+Find all subsets (power set).
+
+Find the maximum difference between two elements.
+
+Rearrange array according to index array.
+
+Convert array to object based on key.
+
+Detect if array contains a subarray with sum zero.
+
+Implement a custom splice() function.

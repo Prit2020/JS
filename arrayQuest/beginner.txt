@@ -1,0 +1,19 @@
+Print all elements of an array.
+
+Find the length of an array without using .length.
+
+Access the first, middle, and last element of an array.
+
+Reverse an array without using .reverse().
+
+Find the sum of all elements in an array.
+
+Find the maximum and minimum element in an array.
+
+Count how many even and odd numbers are in an array.
+
+Check if a value exists in an array.
+
+Copy one array into another without using spread or slice.
+
+Swap the first and last elements of an array.

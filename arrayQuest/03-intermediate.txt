@@ -1,0 +1,19 @@
+Chunk an array into smaller arrays of size n.
+
+Find the longest increasing subarray.
+
+Find the missing number in an array of 1 to N.
+
+Find all pairs whose sum is equal to a given number.
+
+Find all triplets whose sum is zero.
+
+Move all zeros to the end of the array.
+
+Rearrange array so positive and negative numbers alternate.
+
+Sort an array without using .sort().
+
+Find the majority element (appears more than n/2 times).
+
+Find the first non-repeating element.

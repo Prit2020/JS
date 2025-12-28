@@ -1,0 +1,19 @@
+Implement Array.prototype.flat() manually.
+
+Implement Array.prototype.includes() manually.
+
+Find the maximum product of two elements.
+
+Find the maximum subarray sum (Kadane’s Algorithm).
+
+Find the longest subarray with a given sum.
+
+Find the shortest subarray with sum ≥ target.
+
+Remove elements in place and return new length.
+
+Find common elements in K arrays.
+
+Find the kth smallest and kth largest element.
+
+Check if two arrays are equal (order matters / doesn’t matter).

@@ -1,0 +1,19 @@
+Implement your own version of map().
+
+Implement your own version of filter().
+
+Implement your own version of reduce().
+
+Convert an array of numbers to their squares.
+
+Filter out falsy values from an array.
+
+Find the total price from a cart array of objects.
+
+Group array elements based on a property.
+
+Flatten a 2D array into a 1D array.
+
+Flatten a deeply nested array.
+
+Remove all occurrences of a given value.
