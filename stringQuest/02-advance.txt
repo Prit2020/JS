@@ -1,0 +1,19 @@
+Implement regex-like pattern matching (. and *).
+
+Find all permutations of a string.
+
+Generate all valid parentheses from a string.
+
+Implement a basic text search (Naive / KMP).
+
+Find repeated DNA sequences.
+
+Convert string to integer (atoi implementation).
+
+Justify text (left, right, full).
+
+Find all anagram indices in a string.
+
+Reverse string preserving special characters.
+
+Break string into dictionary words (Word Break problem).

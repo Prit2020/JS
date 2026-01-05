@@ -1,0 +1,19 @@
+Find the longest substring without repeating characters.
+
+Find the longest palindrome substring.
+
+Find all substrings of a string.
+
+Check if one string is a rotation of another.
+
+Count all palindromic substrings.
+
+Find the minimum window substring containing another string.
+
+Check if string follows a given pattern.
+
+Find the longest common prefix among strings.
+
+Remove adjacent duplicate characters.
+
+Compress a string (Run-length encoding).

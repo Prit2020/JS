@@ -1,0 +1,19 @@
+Print each character of a string.
+
+Find the length of a string without using .length.
+
+Reverse a string without using built-in methods.
+
+Check if a string is a palindrome.
+
+Count vowels and consonants in a string.
+
+Count the number of words in a string.
+
+Convert a string to uppercase without using .toUpperCase().
+
+Convert a string to lowercase without using .toLowerCase().
+
+Find the first and last character of a string.
+
+Replace spaces with -.

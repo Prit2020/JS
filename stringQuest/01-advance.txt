@@ -1,0 +1,19 @@
+Implement String.prototype.includes() manually.
+
+Implement String.prototype.trim() manually.
+
+Find the lexicographically smallest rotation of a string.
+
+Check if two strings are isomorphic.
+
+Find the longest repeating substring.
+
+Find the smallest substring with all distinct characters.
+
+Find the longest common subsequence.
+
+Find the longest common substring.
+
+Check if string can be rearranged to form a palindrome.
+
+Decode an encoded string (a2b3 → aabbb).

@@ -1,0 +1,19 @@
+Implement your own version of split().
+
+Implement your own version of substring().
+
+Implement your own version of replace().
+
+Find the longest word in a sentence.
+
+Find the shortest word in a sentence.
+
+Convert a sentence to camelCase.
+
+Convert a sentence to snake_case.
+
+Convert a sentence to kebab-case.
+
+Truncate a string after n characters.
+
+Extract numbers from a string.

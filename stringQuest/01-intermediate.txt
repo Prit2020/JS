@@ -1,0 +1,19 @@
+Check if two strings are anagrams.
+
+Find the frequency of each character.
+
+Find the first non-repeating character.
+
+Remove duplicate characters from a string.
+
+Find all duplicate characters.
+
+Check if a string contains only digits.
+
+Reverse words in a sentence.
+
+Capitalize the first letter of each word.
+
+Count occurrences of a given character.
+
+Remove all whitespaces from a string.
