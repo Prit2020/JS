@@ -22,9 +22,9 @@ const newArray = myMapFunction(arrayOne, num => num * num)    // here we invoke 
 
 // below is the function which acts as a filter() method
 function myFilter(arr, callback) {
-    const result = []
+    const result = []  // empty array coz filter() method returns an new array
     for(let i = 0; i < arr.length; i++) {
-        if(callback(arr[i], i, arr)) {        // here if condition will check if the result or value truthy than it will be pushed to new array 
+        if(callback(arr[i], i, arr)) {        // here if condition will check if the result or value is or not truthy than it will be pushed to new array 
             result.push(arr[i])
         }
     }
@@ -34,6 +34,55 @@ function myFilter(arr, callback) {
 
 // below is the usage of the myFilter func
 const arrayTwo = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-const newArrayTwo = myFilter(arrayTwo, num => num % 2 === 0)
+// const newArrayTwo = myFilter(arrayTwo, num => num % 2 === 0)
+const newArrayTwo = myFilter(arrayTwo, num => num > 5)
 
-console.log(newArrayTwo);
+
+// console.log(newArrayTwo);
+
+
+
+// 3. Implement your own version of reduce().
+
+// below is the function which acts like a reduce() method
+function myReduce(arr, callback, initialValue) {
+    let accumulator
+    let startIndex
+
+    // below given if condition checks if initialValue is there or not coz it is optional
+    if(initialValue !== undefined) {
+        accumulator = initialValue
+        startIndex = 0
+    } else {
+        accumulator = arr[0]
+        startIndex = 1
+    }
+
+    for(let i = startIndex; i < arr.length; i++) {
+        accumulator = callback(accumulator, arr[i], i, arr)
+    }
+
+    return accumulator
+
+}
+
+
+// below is the usage of the reduce() method
+const arrayThree = [1, 2, 3, 4]
+const sumArray = myReduce(arrayThree, (acc, curr) => acc + curr)
+// console.log(sumArray);
+
+
+
+// 4. Convert an array of numbers to their squares.
+const arrayFour = [1, 2, 3, 4, 5, 6, 7, 8]
+function squaredArray(arr) {
+    const squareArray = []
+    for(let i = 0; i < arr.length; i++) {
+        squareArray.push(arr[i] * arr[i])
+    }
+
+    return squareArray
+}
+
+console.log(squaredArray(arrayFour));
