@@ -69,7 +69,8 @@ function myReduce(arr, callback, initialValue) {
 
 // below is the usage of the reduce() method
 const arrayThree = [1, 2, 3, 4]
-const sumArray = myReduce(arrayThree, (acc, curr) => acc + curr)
+const sumArray = myReduce(arrayThree, (acc, curr) => acc + curr, 0)    // here initial value is 0
+// const sumArray = myReduce(arrayThree, (acc, curr) => acc + curr)    // there is no initial value over here
 // console.log(sumArray);
 
 
@@ -85,4 +86,43 @@ function squaredArray(arr) {
     return squareArray
 }
 
-console.log(squaredArray(arrayFour));
+// console.log(squaredArray(arrayFour));
+
+
+
+// 5. Filter out falsy values from an array.
+const arrayFive = [1, 2, 3, NaN, 4, 5, 0, 8, 2, 9, "", " "]      // empty "" is false but " " with a space is true
+
+function filterArray(arr) {
+    const newArray = []
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i]) {
+            newArray.push(arr[i])
+        }
+    }
+
+    return newArray
+}
+
+
+// console.log(filterArray(arrayFive));
+
+
+
+
+// 6. Find the total price from a cart array of objects.
+const cart = [
+    {id: 1, price: 1000},
+    {id: 2, price: 3000},
+    {id: 3, price: 50000}
+]
+
+function totalPrice(arr) {
+    let total = 0
+    for(let i = 0; i < arr.length; i++) [
+        total += arr[i].price
+    ]
+    return total
+}
+
+console.log(totalPrice(cart));
