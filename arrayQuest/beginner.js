@@ -22,7 +22,8 @@ let count = 0;
 
 
 // 3. Access the first, middle, and last element of an array.
-const array = [1, 2, 3]
+// const array = [1, 2, 3]
+const array = [1, 2, 3]    // this is for test
 
 let firstElement = array[0];
 // let middleElement = array[array.length / 2]
